@@ -1,0 +1,14 @@
+allprojects {
+  apply plugin: 'java'
+
+  version = project.findProperty('ogr.gradle.project.version') ?: '0.0.1'
+  group = 'io.r2n'
+  sourceCompatibility = targetCompatibility = "$javaVersion"
+
+  defaultTasks 'clean', 'build'
+
+  dependencies {
+    implementation "io.vavr:vavr:$vavrVersion"
+    implementation "org.slf4j:slf4j-api:$slf4jVersion"
+  }
+}

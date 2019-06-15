@@ -1,0 +1,8 @@
+// read more: https://docs.gradle.com/build-scan-plugin/
+
+buildScan {
+  termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+  termsOfServiceAgree = 'yes'
+  publishAlwaysIf('TRAVIS' == System.getenv('CI'))
+  tag System.getProperty('os.name', 'unknown')
+}
