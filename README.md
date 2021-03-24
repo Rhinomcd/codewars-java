@@ -1,5 +1,13 @@
+
 # codewars - java
 [![Build Status](https://travis-ci.org/Rhinomcd/codewars-java.svg?branch=master)](https://travis-ci.org/Rhinomcd/codewars-java)
+
+## Purpose
+
+This repo exists so that I can keep track programming challenges and my solutions.  It might be fun to see how I grow as an engineer.
+These solutions are likely my first passes at these challenges and may have more optimal solutions. 
+
+## Building
 
 ```bash
 # gradle jar
